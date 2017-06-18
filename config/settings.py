@@ -21,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # with open(os.path.join(BASE_DIR, 'secret_key.txt')) as f:
 #     SECRET_KEY = f.read().strip()
 
-ALLOWED_HOSTS = ['anjana-blog.herokuapp.com', 'iraa.me', 'anjanapadmakumar.com', 'My-Macbook', '127.0.0.1']
+ALLOWED_HOSTS = ['.herokuapp.com', 'iraa.me', 'anjanapadmakumar.com', 'My-Macbook', '127.0.0.1']
 
 SECRET_KEY = config('SECRET_KEY')
 
