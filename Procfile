@@ -1,1 +1,1 @@
-web: gunicorn Anjana_blog.wsgi --log-file -
+web: gunicorn config.wsgi --log-file -
