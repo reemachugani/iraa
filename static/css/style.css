@@ -3019,7 +3019,7 @@ a:last-child {
   letter-spacing: 0.3px;
   line-height: 22.0529px;
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: 2rem; }
   @media print, screen and (min-width: 40em) {
     .list, .list a {
       font-size: 1.125rem;
@@ -3177,7 +3177,7 @@ h2 {
   color: #8c8b8c;
   margin: 0; }
 
-.help_text {
+.help_text2 {
   font-family: "myriad-pro", sans-serif;
   color: #bb9f94;
   font-size: 25px; }

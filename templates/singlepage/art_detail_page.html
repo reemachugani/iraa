@@ -1,7 +1,11 @@
 {% extends 'singlepage/single_base.html' %}
 
 {% block detaillist %}
+    <li class="art_details_heading">Client</li>
+    <li>Date: Client Name </li>
+    <li class="art_details_heading">Year</li>
     <li>Date: {{art.pub_date|date}} </li>	
+    <li class="art_details_heading">Project Type</li>
     <li> Category: {{art.art_type.category}}</li>
     {% if art.url %} <li><a href={{ art.url }}> <i>Links</i> </a> </li> {% endif %}
 {% endblock %}

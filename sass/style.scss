@@ -280,7 +280,7 @@ a:last-child{
     letter-spacing: 0.3px;
     line-height: 22.0529px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 2rem;
 
     @include breakpoint(medium)
     {
@@ -480,8 +480,11 @@ h2 {
     margin: 0;
 }
 
-.help_text {
+.help_text2 {
      font-family: $primary-font;
      color: $theme-color;
      font-size: 25px;
  }
+
+ // Individual Art Page
+
