@@ -2931,7 +2931,7 @@ div.row {
   overflow: hidden; }
 
 .anjana_name {
-  font-family: myriad-pro, sans-serif;
+  font-family: "myriad-pro", sans-serif;
   font-style: normal;
   color: #0f0f0f;
   white-space: nowrap;
@@ -2973,7 +2973,7 @@ a:last-child {
   margin-bottom: 0;
   color: #0f0f0f;
   text-transform: uppercase;
-  font-family: myriad-pro, sans-serif;
+  font-family: "myriad-pro", sans-serif;
   padding-right: 8px;
   padding-left: 8px;
   padding-top: 8px;
@@ -3015,7 +3015,7 @@ a:last-child {
 
 .list, .list a {
   color: #8c8b8c;
-  font-family: myriad-pro, sans-serif;
+  font-family: "myriad-pro", sans-serif;
   letter-spacing: 0.3px;
   line-height: 22.0529px;
   font-weight: 400;
@@ -3030,8 +3030,12 @@ a:last-child {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.6875rem;
-    letter-spacing: 2.24px;
-    line-height: 25.2px; }
+    letter-spacing: 2px;
+    line-height: 24px; }
+    @media print, screen and (min-width: 40em) {
+      .list.make_black, .list a.make_black {
+        letter-spacing: 2.24px;
+        line-height: 25.2px; } }
 
 ul {
   margin: 0;
@@ -3071,13 +3075,13 @@ figcaption {
   text-transform: capitalize;
   color: #0f0f0f;
   color: #8c8b8c;
-  font-family: myriad-pro, sans-serif; }
+  font-family: "myriad-pro", sans-serif; }
 
 .caption_category {
   font-size: 1rem;
   text-transform: capitalize;
   color: #8c8b8c;
-  font-family: myriad-pro, sans-serif; }
+  font-family: "myriad-pro", sans-serif; }
 
 .figcaption_inner {
   padding: 0;
@@ -3155,7 +3159,7 @@ figure.effect-honey:hover h3 i {
   padding-left: 8px;
   padding-right: 8xp;
   padding-bottom: 8px;
-  font-family: myriad-pro, sans-serif;
+  font-family: "myriad-pro", sans-serif;
   color: #8c8b8c;
   letter-spacing: 0.64px;
   line-height: 25.2px;
@@ -3168,7 +3172,12 @@ h2 {
 .copyright {
   padding-left: 8px;
   padding-bottom: 16px;
-  font-family: myriad-pro, sans-serif;
+  font-family: "myriad-pro", sans-serif;
   font-size: 14px;
   color: #8c8b8c;
   margin: 0; }
+
+.help_text {
+  font-family: "myriad-pro", sans-serif;
+  color: #bb9f94;
+  font-size: 25px; }

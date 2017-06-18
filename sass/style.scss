@@ -52,8 +52,8 @@ $margin: 0;
 $letter-spacing: .01em;
 $header-length: 110px;
 $header-shrunk-length: 65px;
-$primary-font: myriad-pro, sans-serif;
-$secondary-font: minion-pro-caption, serif;
+$primary-font: "myriad-pro", sans-serif;
+$secondary-font: "minion-pro-caption", serif;
 $image-hover-transparency: 0.1;
 $caption-font-size: 2rem;
 $caption-category-font-size: 1rem;
@@ -294,8 +294,14 @@ a:last-child{
         text-transform: uppercase;
         font-weight: 600;
         font-size: 0.6875rem;
-        letter-spacing: 2.24px;
-        line-height: 25.2px;
+        letter-spacing: 2px;
+        line-height: 24px;
+    
+        @include breakpoint(medium)
+        {
+            letter-spacing: 2.24px;
+            line-height: 25.2px;
+        }
     }
 }
 
@@ -473,3 +479,9 @@ h2 {
     color: $text-color;
     margin: 0;
 }
+
+.help_text {
+     font-family: $primary-font;
+     color: $theme-color;
+     font-size: 25px;
+ }
