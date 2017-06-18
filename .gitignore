@@ -5,7 +5,9 @@ secret_key.txt
 *.sqlite3
 .vscode
 ../.vscode/settings.json
-media
+media/*.jpg
+media/*.png
+media/*.jpeg
 bower_components
 node_modules
 .sass-cache
