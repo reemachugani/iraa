@@ -4,15 +4,6 @@
 
 	{% for art in arts %}
 
-		
-			<!-- 
-				{{art.title}}
-				{{art.pub_date|date}}
-				{{art.art_type.category}}
-				{{ art.url }}
-				{{art.body|safe}}
-			-->
-
         <a class="project columns small-12 medium-6"  href= {% url 'art:art_detail_page' slug=art.slug %} />
 			<figure class="project_image effect-honey">
 				<picture class="project_image">
