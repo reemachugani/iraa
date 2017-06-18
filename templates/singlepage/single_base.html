@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
 
 {% block navigatorlist %}
+<ul class="list">
+	{% block detaillist %}
+	{% endblock %}
+</ul>
 {% endblock %}
 
 {% block promotext %}
 {% endblock %}
 
 {% block content %}
-{% block main-content %} {% endblock %}
-{% endblock %}
-
-{% block footertext %}
+	{% block main-content %} {% endblock %}
 {% endblock %}
