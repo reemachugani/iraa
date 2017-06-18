@@ -1,0 +1,40 @@
+{% extends 'art/art_base.html' %}
+
+{% block main-content %}
+
+	{% for art in arts %}
+
+		
+			<!-- 
+				{{art.title}}
+				{{art.pub_date|date}}
+				{{art.art_type.category}}
+				{{ art.url }}
+				{{art.body|safe}}
+			-->
+
+        <a class="project columns small-12 medium-6"  href= {% url 'art:art_detail_page' slug=art.slug %} />
+			<figure class="project_image effect-honey">
+				<picture class="project_image">
+					<img class="project_image" srcset="/media/{{art.image_lowres}}" alt="{{art.title}}" />
+				</picture>
+				
+				<figcaption class="project_image">
+					<span class="figcaption_inner">	
+						<h3 class="figcaption_sub">{{art.title}}<br/>
+						<span class="caption_category">{{art.art_type.category}}</span></h3>
+					</span>
+				</figcaption>
+			</figure>
+		</a>
+			
+
+		<p/>	
+
+		{% if not forloop.last %}
+			<div class="underline"></div>
+		{% endif %}
+
+	{% endfor %}
+
+{% endblock %}

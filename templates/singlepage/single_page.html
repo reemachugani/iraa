@@ -1,0 +1,16 @@
+{% extends 'singlepage/single_base.html' %}
+
+{% block main-content %}
+
+<div class="row">
+        <div class="columns medium-6">
+                <ul class="list"><li></li></ul>
+        </div>
+        <div class="columns medium-6">
+                <div class="content">
+                        {{singlepage.body|safe}}
+                </div>
+        </div>
+</div>
+
+{% endblock %}
