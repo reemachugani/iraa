@@ -3248,6 +3248,8 @@ h2 {
   display: block;
   margin: 0 auto;
   text-align: center; }
+  .project_stuff p {
+    color: #bb9f94; }
 
 .row .elephant {
   display: block;
