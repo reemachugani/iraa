@@ -23,8 +23,8 @@ class Art(models.Model):
     art_type = models.ForeignKey('Art_Category', on_delete=models.CASCADE)
     tags = TagField(help_text=u'Seperate tags with spaces.')
     url = models.URLField('URL', null=True, blank=True)
-    image_highres = models.ImageField(upload_to=get_upload_path_high)
-    image_lowres = models.ImageField(upload_to=get_upload_path_low)
+    image_highres = models.ImageField(upload_to=get_upload_path_high, null=True, blank=True)
+    image_lowres = models.ImageField(upload_to=get_upload_path_low, null=True, blank=True)
 
     class Meta:
         ordering = ['-pub_date']
@@ -64,3 +64,17 @@ class Art_Category(models.Model):
 
     def __str__(self):
         return self.category
+
+class Art_Url(models.Model):
+    body = models.TextField()
+    body_html = models.TextField(editable=False, blank=True)
+    url = models.URLField('URL', null=True, blank=True)
+    art = models.ForeignKey('Art', on_delete=models.CASCADE)
+    sequence = models.IntegerField()
+
+    class Meta:
+        ordering = ['sequence']
+
+    def save(self, force_insert=False, force_update=False):
+        self.body_html = markdown(self.body)
+        super(Art_Url, self).save(force_insert, force_update)

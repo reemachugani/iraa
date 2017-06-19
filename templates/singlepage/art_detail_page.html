@@ -7,5 +7,9 @@
 {% endblock %}
 
 {% block main-content %}
+{% for image in art.art_url_set.all %}
+<div><img srcset="{{image.url}}" alt="image{{image.sequence}}"/></div>
+<div>{{image.body|safe}}</div>
+{% endfor %}
 			<div class="body">{{art.body|safe}}</div>
 {% endblock %}
