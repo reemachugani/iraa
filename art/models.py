@@ -59,6 +59,7 @@ class Art_Category(models.Model):
     class Meta:
         verbose_name = "Art Category"
         verbose_name_plural = "Art Categories"
+        ordering = ['category']
 
     def __unicode__(self):
         return self.category
