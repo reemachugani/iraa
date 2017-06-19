@@ -168,6 +168,9 @@ div.row {
 
 a {
     color: $theme-color;
+    &.special {
+        color: $heading-color;
+    }
 }
 
 // HEADER

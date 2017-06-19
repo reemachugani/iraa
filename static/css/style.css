@@ -2879,6 +2879,8 @@ div.row {
 
 a {
   color: #bb9f94; }
+  a.special {
+    color: #0f0f0f; }
 
 .cbp-af-header {
   top: 0;
