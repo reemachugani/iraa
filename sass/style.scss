@@ -501,6 +501,7 @@ figure.effect-honey:hover h3 i {
 .anjana_profile_text
 {
     @include paragraph-style();
+    padding-left: 8px;
 }
 
 h2 { 
