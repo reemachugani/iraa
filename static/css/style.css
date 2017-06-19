@@ -3186,7 +3186,8 @@ figure.effect-honey:hover h3 i {
   letter-spacing: 0.64px;
   line-height: 25.2px;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-left: 8px; }
 
 h2 {
   padding-left: 8px; }
