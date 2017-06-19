@@ -17,6 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "foundation-sites": "6.3.1"
+    "foundation-sites": "6.3.1",
+    "nprogress": "^0.2.0"
   }
 }

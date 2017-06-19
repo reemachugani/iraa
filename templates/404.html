@@ -9,8 +9,21 @@
     </head>
 <body>
     <div class="container">
-    <span class="help_text"> Hey! You seem to have got lost. Wish to go back? Hold the tail... </span>
-        <a class="elephant" href="/"> <br/> <img src="/static/images/elephant.png" alt="Baby Elephant"> </a>
+        <div class="row">
+            <a class="elephant" href="/" />
+                <figure>
+                    <picture>
+                        <img srcset="/static/images/elephant.png" alt="404" />
+                    </picture>
+                </figure>
+		    </a>
+        </div>
+        <div class="row">
+            <h3 class="help_text lost">404.</h2>
+        </div>
+        <div class="row">
+            <h3 class="help_text">Hmm. You seem to have got lost. Shall we <a class="oneoff" href="/"><u>go back?</u></a> Hold the tail...<br/>
+        </div>
     </div>
 
     <script src="/static/js/jquery.min.js"></script>

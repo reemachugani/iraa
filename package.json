@@ -18,5 +18,8 @@
     "grunt-contrib-connect": "latest",
     "grunt-postcss": "latest",
     "grunt-contrib-cssmin": "latest"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0"
   }
 }

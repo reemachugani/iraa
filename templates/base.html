@@ -4,11 +4,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Anjana</title>
-		<link rel="stylesheet" href="/static/css/style.css" />
-        <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png">
-        <script src="/static/js/modernizr.custom.js"></script>
         <script src="https://use.typekit.net/zfc5yqh.js"></script>
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        <script src='/static/js/nprogress.js'></script>
+		<link rel="stylesheet" href="/static/css/style.css" />
+        <link rel='stylesheet' href='/static/css/nprogress.css'/>
+        <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon-96x96.png">
+        <script src="/static/js/modernizr.custom.js"></script>
 	</head>
   <body>
 
@@ -59,7 +61,7 @@
             
         </div>
         <div class="scene_artwork">
-            <div class="artwork row">
+            <div class="artwork row" id="artwork">
                 {% block content %} {% endblock %}
             </div>
         </div>
@@ -77,11 +79,21 @@
             </div>
         </footer>
     </div>
- 
+    
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/classie.js"></script>
     <script src="/static/js/cbpAnimatedHeader.min.js"></script></script>
     <script src="/static/js/foundation.min.js"></script>
     <script src="/static/js/script.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            NProgress.start();
+        });
+        $(window).load(function() {
+            //setTimout() for 2 seconds progress stop delay
+            setTimeout(function(){NProgress.done()},2000);
+            NProgress.stop();
+        });
+    </script>
   </body>
 </html>
