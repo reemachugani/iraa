@@ -66,8 +66,60 @@ $caption-category-font-size: 1rem;
     transform: translateY(-50%);
 }
 
+@mixin make-black {
+    color: $heading-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.625rem;
+    letter-spacing: 2px;
+    line-height: 24px;
+    
+    @include breakpoint(medium)
+    {
+        letter-spacing: 2.24px;
+        line-height: 25.2px;
+        font-size: 0.6875rem;
+    }
+}
+
+@mixin list-item {
+    color: $text-color;
+    font-family: $primary-font;
+    letter-spacing: 0.3px;
+    line-height: 22.0529px;
+    font-weight: 400;
+    font-size: 1rem;
+
+    @include breakpoint(medium)
+    {
+        font-size: 1.125rem;
+        line-height: 25px;
+        font-weight: 500;
+    }
+}
+
+@mixin paragraph-style {
+    padding-right: 8xp;
+    padding-bottom: 8px;
+    font-family: $primary-font;
+    color: $text-color;
+    letter-spacing: 0.64px;
+    line-height: 25.2px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+figure, picture {
+    width: 100%;
+    max-height: 100%;
+}
+
 a:focus, a:hover {
 	color: $theme-color;
+}
+
+*, body, html {
+    box-sizing: border-box;
 }
 
 html
@@ -265,8 +317,14 @@ a:last-child{
     padding-top: 20px;
     padding-left: 8px;
     color: $theme-color;
-    font-size: 34px;
-    line-height: 1.3;
+    font-size: 30px;
+    line-height: 39px;
+
+    @include breakpoint(medium)
+    {
+        font-size: 34px;
+        line-height: 44px;
+    }
 }
 
 .list {
@@ -275,33 +333,12 @@ a:last-child{
 }
 
 .list, .list a {
-    color: $text-color;
-    font-family: $primary-font;
-    letter-spacing: 0.3px;
-    line-height: 22.0529px;
-    font-weight: 400;
-    font-size: 2rem;
-
-    @include breakpoint(medium)
-    {
-        font-size: 1.125rem;
-        line-height: 25px;
-        font-weight: 500;
-    }
+    @include list-item();
 
     &.make_black {
-        color: $heading-color;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 0.6875rem;
-        letter-spacing: 2px;
-        line-height: 24px;
-    
-        @include breakpoint(medium)
-        {
-            letter-spacing: 2.24px;
-            line-height: 25.2px;
-        }
+        @include make-black();
+        transition: all 0.3s;
+        transform: translateY(-50%);
     }
 }
 
@@ -455,15 +492,7 @@ figure.effect-honey:hover h3 i {
 
 .anjana_profile_text
 {
-    padding-left: 8px;
-    padding-right: 8xp;
-    padding-bottom: 8px;
-    font-family: $primary-font;
-    color: $text-color;
-    letter-spacing: 0.64px;
-    line-height: 25.2px;
-    font-size: 18px;
-    font-weight: 400;
+    @include paragraph-style();
 }
 
 h2 { 
@@ -487,4 +516,11 @@ h2 {
  }
 
  // Individual Art Page
+ .art_details_content {
+     @include list-item();
+     margin-bottom: 16px;
+}
 
+.art_details_heading {
+    @include make-black();
+}

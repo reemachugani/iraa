@@ -2823,8 +2823,16 @@ html.is-reveal-open body {
 .clearfix::after {
   clear: both; }
 
+figure, picture {
+  width: 100%;
+  max-height: 100%; }
+
 a:focus, a:hover {
   color: #bb9f94; }
+
+*, body, html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 html {
   line-height: 1.4;
@@ -3006,8 +3014,12 @@ a:last-child {
   padding-top: 20px;
   padding-left: 8px;
   color: #bb9f94;
-  font-size: 34px;
-  line-height: 1.3; }
+  font-size: 30px;
+  line-height: 39px; }
+  @media print, screen and (min-width: 40em) {
+    .promo_text_div h1 {
+      font-size: 34px;
+      line-height: 44px; } }
 
 .list {
   margin: 0;
@@ -3019,7 +3031,7 @@ a:last-child {
   letter-spacing: 0.3px;
   line-height: 22.0529px;
   font-weight: 400;
-  font-size: 2rem; }
+  font-size: 1rem; }
   @media print, screen and (min-width: 40em) {
     .list, .list a {
       font-size: 1.125rem;
@@ -3029,13 +3041,18 @@ a:last-child {
     color: #0f0f0f;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 0.6875rem;
+    font-size: 0.625rem;
     letter-spacing: 2px;
-    line-height: 24px; }
+    line-height: 24px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
     @media print, screen and (min-width: 40em) {
       .list.make_black, .list a.make_black {
         letter-spacing: 2.24px;
-        line-height: 25.2px; } }
+        line-height: 25.2px;
+        font-size: 0.6875rem; } }
 
 ul {
   margin: 0;
@@ -3156,7 +3173,6 @@ figure.effect-honey:hover h3 i {
   padding-right: 48px; }
 
 .anjana_profile_text {
-  padding-left: 8px;
   padding-right: 8xp;
   padding-bottom: 8px;
   font-family: "myriad-pro", sans-serif;
@@ -3181,3 +3197,30 @@ h2 {
   font-family: "myriad-pro", sans-serif;
   color: #bb9f94;
   font-size: 25px; }
+
+.art_details_content {
+  color: #8c8b8c;
+  font-family: "myriad-pro", sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 22.0529px;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 16px; }
+  @media print, screen and (min-width: 40em) {
+    .art_details_content {
+      font-size: 1.125rem;
+      line-height: 25px;
+      font-weight: 500; } }
+
+.art_details_heading {
+  color: #0f0f0f;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.625rem;
+  letter-spacing: 2px;
+  line-height: 24px; }
+  @media print, screen and (min-width: 40em) {
+    .art_details_heading {
+      letter-spacing: 2.24px;
+      line-height: 25.2px;
+      font-size: 0.6875rem; } }
