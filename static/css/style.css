@@ -3020,7 +3020,8 @@ a:last-child {
   padding-left: 8px;
   color: #bb9f94;
   font-size: 26px;
-  line-height: 36px; }
+  line-height: 36px;
+  font-family: "myriad-pro", sans-serif; }
   @media print, screen and (min-width: 40em) {
     .promo_text_div h1 {
       font-size: 34px;

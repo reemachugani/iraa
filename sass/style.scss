@@ -326,6 +326,7 @@ a:last-child{
     color: $theme-color;
     font-size: 26px;
     line-height: 36px;
+    font-family: $primary-font;
 
     @include breakpoint(medium)
     {
