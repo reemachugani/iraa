@@ -25,6 +25,7 @@ class Art(models.Model):
     url = models.URLField('URL', null=True, blank=True)
     image_highres = models.ImageField(upload_to=get_upload_path_high, null=True, blank=True)
     image_lowres = models.ImageField(upload_to=get_upload_path_low, null=True, blank=True)
+    client_name = models.CharField(max_length=250, help_text=u'Max 250 characters', blank=True, null=True)
 
     class Meta:
         ordering = ['-pub_date']

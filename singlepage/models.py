@@ -7,6 +7,7 @@ class Singlepage(models.Model):
     display_word = models.CharField(max_length=50, help_text=u'Max 50 characters. Displayed in the header.')
     body = models.TextField()
     body_html = models.TextField(editable=False, blank=True)
+    url = models.URLField('URL', null=True, blank=True)
 
     def __unicode__(self):
         return self.title

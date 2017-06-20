@@ -6,6 +6,7 @@ class Art_UrlInline(admin.TabularInline):
 
 class ArtAdmin(admin.ModelAdmin):
     list_display = ('title', 'pub_date', 'art_type',)
+    exclude = ('image_highres', 'image_lowres',)
     list_filter = ('art_type__category',)
     prepopulated_fields = {'slug': ('title',), }
     inlines = [

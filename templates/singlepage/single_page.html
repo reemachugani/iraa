@@ -7,7 +7,7 @@
                 <div class="profile_pic">
                         <figure class="project_image">
 				<picture class="project_image">
-					<img class="project_image" srcset="/static/images/elephant.png" alt="Anjana-Profile-Image" />
+					{% if singlepage.url %} <img class="project_image" srcset="{{singlepage.url}}" alt="Anjana-Profile-Image" /> {% endif %}
 				</picture>
 			</figure>
                 </div>
