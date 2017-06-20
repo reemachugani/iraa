@@ -3,8 +3,8 @@
 {% block main-content %}
 
 	{% for art in arts %}
-
-        <a class="project columns small-12 medium-6"  href= {% url 'art:art_detail_page' slug=art.slug %} />
+	<div class="project columns small-12 medium-6">
+        <a href= {% url 'art:art_detail_page' slug=art.slug %} />
 			<figure class="project_image effect-honey">
 				<picture class="project_image">
 					<img class="project_image" srcset="{{art.url}}" alt="{{art.title}}" />
@@ -18,6 +18,7 @@
 				</figcaption>
 			</figure>
 		</a>
+	</div>
 			
 
 		<p/>	

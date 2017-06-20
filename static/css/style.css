@@ -3092,7 +3092,11 @@ figure {
   padding: 8px; }
 
 img {
-  border-style: none; }
+  border-style: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 553px;
+  height: 369px; }
 
 figcaption {
   display: block;
@@ -3272,7 +3276,8 @@ h2 {
   margin: 0 auto;
   text-align: center; }
   .project_stuff p {
-    color: #bb9f94; }
+    color: #8c8b8c;
+    font-family: "proxima-soft", sans-serif; }
 
 .row .elephant {
   display: block;

@@ -389,6 +389,13 @@ figure {
 
 img {
     border-style: none;
+    object-fit: cover;
+    width: 553px;
+    height: 369px;
+    //max-width: 100%;
+    //max-height: 100%;
+    // 553
+// 368.828
 }
 
 figcaption
@@ -572,7 +579,8 @@ h2 {
     margin: 0 auto;
     text-align: center;
     p {
-        color: $theme-color;
+        color: $text-color;
+        font-family: $primary-font;
     }
 }
 
@@ -581,3 +589,4 @@ h2 {
     margin: 0 auto;
     transform: translateY(50%);
 }
+
