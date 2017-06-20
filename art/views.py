@@ -8,9 +8,9 @@ def art_home(request):
     categories = Art_Category.objects.all()
     return render_to_response('art/art_home.html', {'arts': arts, 'categories': categories}, context_instance=RequestContext(request))
 
-def art_by_category(request, category_name):
+def art_by_category(request, slug):
     all_arts = Art.objects.all()
-    category_arts = all_arts.filter(art_type__category = category_name)
+    category_arts = all_arts.filter(art_type__slug = slug)
     # if not category_arts:
     #     return redirect('art.views.art_home')
     categories = Art_Category.objects.all()

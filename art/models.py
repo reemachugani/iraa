@@ -16,7 +16,7 @@ class Art(models.Model):
         return os.path.join(instance.art_type.category, "low", filename)
 
     title = models.CharField(max_length=250, help_text=u'Max 250 characters')
-    slug = models.SlugField(help_text=u'Suggested value automatically generated from title. Must be unique.')
+    slug = models.SlugField(unique=True, help_text=u'Suggested value automatically generated from title. Must be unique.')
     body = models.TextField()
     body_html = models.TextField(editable=False, blank=True)
     pub_date = models.DateTimeField(default=datetime.datetime.now)
@@ -54,10 +54,12 @@ class Art_Category(models.Model):
     Class defining art types
     """
     category = models.CharField(max_length=100, help_text=u'Max 100 characters')
+    slug = models.SlugField(unique=True, help_text=u'Suggested value automatically generated from title. Must be unique.')
 
     class Meta:
         verbose_name = "Art Category"
         verbose_name_plural = "Art Categories"
+        ordering = ['category']
 
     def __unicode__(self):
         return self.category

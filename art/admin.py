@@ -7,6 +7,7 @@ class Art_UrlInline(admin.TabularInline):
 class ArtAdmin(admin.ModelAdmin):
     list_display = ('title', 'pub_date', 'art_type',)
     list_filter = ('art_type__category',)
+    prepopulated_fields = {'slug': ('title',), }
     inlines = [
         Art_UrlInline,
     ]
@@ -16,6 +17,7 @@ class ArtAdmin(admin.ModelAdmin):
 
 class Art_CategoryAdmin(admin.ModelAdmin):
     list_display = ('category',)
+    prepopulated_fields = {'slug': ('category',), }
 
 admin.site.register(Art, ArtAdmin)
 admin.site.register(Art_Category, Art_CategoryAdmin)
