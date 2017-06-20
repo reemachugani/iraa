@@ -3093,10 +3093,8 @@ figure {
 
 img {
   border-style: none;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 553px;
-  height: 369px; }
+  -o-object-fit: fill;
+     object-fit: fill; }
 
 figcaption {
   display: block;
