@@ -2,7 +2,7 @@
 
 {% block detaillist %}
     <li class="art_details_heading">Client</li>
-    <li class="art_details_content">{% if art.client_name %} {{art.client_name}} {% else %} Personal {% endif %} </li>
+    <li class="art_details_content">{% if art.client_name %} {{art.client_name}} {% else %} Personal Work {% endif %} </li>
     <li class="art_details_heading">Year</li>
     <li class="art_details_content">{{art.pub_date|date}} </li>	
     <li class="art_details_heading">Project Type</li>
