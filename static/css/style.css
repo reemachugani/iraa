@@ -2828,7 +2828,7 @@ figure, picture {
   max-height: 100%; }
 
 a:focus, a:hover {
-  color: #bb9f94; }
+  color: #5e0e2a; }
 
 *, body, html {
   -webkit-box-sizing: border-box;
@@ -2847,14 +2847,23 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100%;
-  background-color: #e8e4e5;
+  background-color: #e7e0f0;
   box-sizing: border-box;
   margin: 0;
   letter-spacing: 0.01em;
-  font-size: 16px; }
+  font-size: 16px;
+  min-height: 100%; }
 
 .container {
-  position: relative; }
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%; }
 
 div.row {
   padding-left: 1rem;
@@ -2878,7 +2887,7 @@ div.row {
           flex-flow: row wrap; }
 
 a {
-  color: #bb9f94; }
+  color: #5e0e2a; }
   a.special {
     color: #0f0f0f; }
 
@@ -2888,7 +2897,7 @@ a {
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: #e8e4e5;
+  background-color: #e7e0f0;
   padding-left: 0px;
   padding-right: 0px;
   height: 110px;
@@ -2944,7 +2953,7 @@ a {
   overflow: hidden; }
 
 .anjana_name {
-  font-family: "myriad-pro", sans-serif;
+  font-family: "proxima-soft", sans-serif;
   font-style: normal;
   color: #0f0f0f;
   white-space: nowrap;
@@ -2986,7 +2995,7 @@ a:last-child {
   margin-bottom: 0;
   color: #0f0f0f;
   text-transform: uppercase;
-  font-family: "myriad-pro", sans-serif;
+  font-family: "proxima-soft", sans-serif;
   padding-right: 8px;
   padding-left: 8px;
   padding-top: 8px;
@@ -3018,10 +3027,10 @@ a:last-child {
 .promo_text_div h1 {
   padding-top: 20px;
   padding-left: 8px;
-  color: #bb9f94;
+  color: #5e0e2a;
   font-size: 26px;
   line-height: 36px;
-  font-family: "myriad-pro", sans-serif; }
+  font-family: "proxima-soft", sans-serif; }
   @media print, screen and (min-width: 40em) {
     .promo_text_div h1 {
       font-size: 34px;
@@ -3033,7 +3042,7 @@ a:last-child {
 
 .list, .list a {
   color: #8c8b8c;
-  font-family: "myriad-pro", sans-serif;
+  font-family: "proxima-soft", sans-serif;
   letter-spacing: 0.3px;
   line-height: 22.0529px;
   font-weight: 400;
@@ -3069,7 +3078,7 @@ ul {
 
 .artwork {
   padding-right: 16px;
-  padding-bottom: 16px; }
+  padding-bottom: 32px; }
 
 .project_image {
   display: block; }
@@ -3098,13 +3107,13 @@ figcaption {
   text-transform: capitalize;
   color: #0f0f0f;
   color: #8c8b8c;
-  font-family: "myriad-pro", sans-serif; }
+  font-family: "proxima-soft", sans-serif; }
 
 .caption_category {
   font-size: 1rem;
   text-transform: capitalize;
   color: #8c8b8c;
-  font-family: "myriad-pro", sans-serif; }
+  font-family: "proxima-soft", sans-serif; }
 
 .figcaption_inner {
   padding: 0;
@@ -3181,7 +3190,7 @@ figure.effect-honey:hover h3 i {
 .anjana_profile_text {
   padding-right: 8xp;
   padding-bottom: 8px;
-  font-family: "myriad-pro", sans-serif;
+  font-family: "proxima-soft", sans-serif;
   color: #8c8b8c;
   letter-spacing: 0.64px;
   line-height: 25.2px;
@@ -3192,17 +3201,24 @@ figure.effect-honey:hover h3 i {
 h2 {
   padding-left: 8px; }
 
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
 .copyright {
   padding-left: 8px;
-  padding-bottom: 16px;
-  font-family: "myriad-pro", sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: "proxima-soft", sans-serif;
   font-size: 14px;
   color: #8c8b8c;
   margin: 0; }
 
 .help_text {
-  font-family: "myriad-pro", sans-serif;
-  color: #bb9f94;
+  font-family: "proxima-soft", sans-serif;
+  color: #5e0e2a;
   font-size: 25px;
   text-align: center;
   position: relative;
@@ -3220,7 +3236,7 @@ h2 {
 
 .art_details_content {
   color: #8c8b8c;
-  font-family: "myriad-pro", sans-serif;
+  font-family: "proxima-soft", sans-serif;
   letter-spacing: 0.3px;
   line-height: 22.0529px;
   font-weight: 400;
@@ -3253,7 +3269,7 @@ h2 {
   margin: 0 auto;
   text-align: center; }
   .project_stuff p {
-    color: #bb9f94; }
+    color: #5e0e2a; }
 
 .row .elephant {
   display: block;

@@ -41,18 +41,19 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
-////////
-
-$background-color: #e8e4e5;
-$theme-color: #bb9f94;
+//$background-color: #e8e4e5;
+//$theme-color: #bb9f94;
 $heading-color: #0f0f0f;
 $text-color: #8c8b8c;
+$theme-color: #5e0e2a;
+$background-color: #e7e0f0;
 $font-size: 16px;
 $margin: 0;
 $letter-spacing: .01em;
 $header-length: 110px;
 $header-shrunk-length: 65px;
-$primary-font: "myriad-pro", sans-serif;
+//$primary-font: "myriad-pro", sans-serif;
+$primary-font: "proxima-soft",sans-serif;
 $secondary-font: "minion-pro-caption", serif;
 $image-hover-transparency: 0.1;
 $caption-font-size: 2rem;
@@ -141,10 +142,14 @@ body{
     margin: $margin;
     letter-spacing: $letter-spacing;
     font-size: $font-size;
+    min-height: 100%;
 }
 
 .container {
 	position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 div.row {
@@ -363,7 +368,7 @@ ul {
 
 .artwork {
     padding-right: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 32px;
 }
 
 .project_image {
@@ -509,9 +514,18 @@ h2 {
 }
 
 // Footer
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
 .copyright {
     padding-left: 8px;
-    padding-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     font-family: $primary-font;
     font-size: 14px;
     color: $text-color;
