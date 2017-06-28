@@ -4,20 +4,22 @@
 
 	{% for art in arts %}
 	<div class="project columns small-12 medium-6">
-        <a href= {% url 'art:art_detail_page' slug=art.slug %} />
-			<figure class="project_image effect-honey">
-				<picture class="project_image">
-					<img class="project_image" srcset="{{art.url}}" alt="{{art.title}}" />
-				</picture>
-				
-				<figcaption class="project_image">
-					<span class="figcaption_inner">	
-						<h3 class="figcaption_sub">{{art.title}}<br/>
-						<span class="caption_category">{{art.art_type.category}}</span></h3>
-					</span>
-				</figcaption>
-			</figure>
-		</a>
+		<div class="grid_image_container">
+			<a href= {% url 'art:art_detail_page' slug=art.slug %} />
+				<figure class="project_image effect-honey">
+					<picture class="project_image">
+						<img class="project_image" srcset="{{art.url}}" alt="{{art.title}}" />
+					</picture>
+					
+					<figcaption class="project_image">
+						<span class="figcaption_inner">	
+							<h3 class="figcaption_sub">{{art.title}}<br/>
+							<span class="caption_category">{{art.art_type.category}}</span></h3>
+						</span>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
 	</div>
 			
 
