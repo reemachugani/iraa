@@ -3278,14 +3278,17 @@ h2 {
 .project_stuff {
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom: 8px;
   display: block;
   margin: 0 auto;
   text-align: left; }
   .project_stuff p {
     color: #8c8b8c;
     font-family: "proxima-soft", sans-serif;
-    padding-top: 1rem; }
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+
+.artdetail_image {
+  padding-bottom: 16px; }
 
 .row .elephant {
   display: block;
