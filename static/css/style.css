@@ -2850,7 +2850,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100%;
-  background-color: #e7e0f0;
+  background-color: #e8dfd8;
   box-sizing: border-box;
   margin: 0;
   letter-spacing: 0.01em;
@@ -2900,7 +2900,7 @@ a {
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: #e7e0f0;
+  background-color: #e8dfd8;
   padding-left: 0px;
   padding-right: 0px;
   height: 110px;
@@ -3030,7 +3030,7 @@ a:last-child {
 .promo_text_div h1 {
   padding-top: 20px;
   padding-left: 8px;
-  color: #5e0e2a;
+  color: #623d5b;
   font-size: 26px;
   line-height: 36px;
   font-family: "proxima-soft", sans-serif; }
@@ -3091,10 +3091,16 @@ figure {
   position: relative;
   padding: 8px; }
 
+.grid_image_container {
+  margin: 0; }
+
 img {
   border-style: none;
-  -o-object-fit: fill;
-     object-fit: fill; }
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-height: 370px; }
 
 figcaption {
   display: block;
@@ -3272,10 +3278,11 @@ h2 {
   padding-bottom: 8px;
   display: block;
   margin: 0 auto;
-  text-align: center; }
+  text-align: left; }
   .project_stuff p {
     color: #8c8b8c;
-    font-family: "proxima-soft", sans-serif; }
+    font-family: "proxima-soft", sans-serif;
+    padding-top: 1rem; }
 
 .row .elephant {
   display: block;

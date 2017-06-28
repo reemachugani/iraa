@@ -2,8 +2,8 @@
 $theme-color: #bb9f94;
 $heading-color: #0f0f0f;
 $text-color: #8c8b8c;
-$anjana-color: #5e0e2a;
-$background-color: #e7e0f0;
+$anjana-color: #623d5b;
+$background-color: #e8dfd8;
 $font-size: 16px;
 $margin: 0;
 $letter-spacing: .01em;
@@ -387,13 +387,18 @@ figure {
     padding: 8px;
 }
 
+.grid_image_container {
+    margin: 0;
+}
+
 img {
     border-style: none;
-    object-fit: fill;
-    //max-width: 100%;
-    //max-height: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 370px;
     // 553
-// 368.828
+    // 368.828
 }
 
 figcaption
@@ -575,10 +580,11 @@ h2 {
     padding-bottom: 8px;
     display: block;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     p {
         color: $text-color;
         font-family: $primary-font;
+        padding-top: 1rem;
     }
 }
 
