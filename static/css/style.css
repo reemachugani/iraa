@@ -3285,10 +3285,12 @@ h2 {
     color: #8c8b8c;
     font-family: "proxima-soft", sans-serif;
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
+    padding-bottom: 0.5rem;
+    margin: 0; }
 
 .artdetail_image {
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  padding-top: 16px; }
 
 .row .elephant {
   display: block;
