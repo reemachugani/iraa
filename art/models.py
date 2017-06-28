@@ -26,9 +26,10 @@ class Art(models.Model):
     image_highres = models.ImageField(upload_to=get_upload_path_high, null=True, blank=True)
     image_lowres = models.ImageField(upload_to=get_upload_path_low, null=True, blank=True)
     client_name = models.CharField(max_length=250, help_text=u'Max 250 characters', blank=True, null=True)
+    order_num = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ['-pub_date']
+        ordering = ['order_num']
 
     def __unicode__(self):
         return self.title
@@ -69,8 +70,8 @@ class Art_Category(models.Model):
         return self.category
 
 class Art_Url(models.Model):
-    body = models.TextField()
-    body_html = models.TextField(editable=False, blank=True)
+    body = models.TextField(blank=True)
+    body_html = models.TextField(editable=False, blank=True, null=True)
     url = models.URLField('URL', null=True, blank=True)
     art = models.ForeignKey('Art', on_delete=models.CASCADE)
     sequence = models.IntegerField()
