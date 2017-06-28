@@ -379,6 +379,13 @@ ul {
 
 .project_image {
     display: block;
+    border-style: none;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 370px;
+    // 553
+    // 368.828
 }
 
 figure {
@@ -393,12 +400,7 @@ figure {
 
 img {
     border-style: none;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    max-height: 370px;
-    // 553
-    // 368.828
+    object-fit: fill;
 }
 
 figcaption

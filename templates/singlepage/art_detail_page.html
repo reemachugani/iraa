@@ -16,7 +16,7 @@
 {% block main-content %}
     {% for image in art.art_url_set.all %}
     <div class="project_stuff">
-        <img srcset="{{image.url}}" alt="image{{image.sequence}}"/>
+        <img class="artdetail_image" srcset="{{image.url}}" alt="image{{image.sequence}}"/>
         {{image.body|safe}}
     </div>
     {% endfor %}
