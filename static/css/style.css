@@ -2914,13 +2914,13 @@ a {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translate3d(0%, -50%, 0%); }
 
 .cbp-af-inner {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translate3d(0%, -50%, 0%); }
 
 .cbp-af-header .anjana_name,
 .cbp-af-header nav {
@@ -2932,13 +2932,13 @@ a {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translate3d(0%, -50%, 0%); }
 
 .cbp-af-header nav a {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translate3d(0%, -50%, 0%); }
 
 /* Transitions and class for reduced height */
 .cbp-af-header .anjana_name,
@@ -2968,7 +2968,7 @@ a {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translate3d(0%, -50%, 0%); }
   @media print, screen and (min-width: 40em) {
     .anjana_name {
       color: #0f0f0f;
@@ -3198,7 +3198,6 @@ figure.effect-honey:hover h3 i {
   text-align: center; }
 
 .content {
-  padding-top: 20px;
   padding-right: 48px; }
 
 .anjana_profile_text {
@@ -3238,7 +3237,7 @@ h2 {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translate3d(0%, -50%, 0%);
   display: block;
   margin: 0 auto;
   -webkit-transform: translateY(200%);

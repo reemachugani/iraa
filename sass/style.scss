@@ -63,14 +63,14 @@ $caption-category-font-size: 1rem;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 
-
-
 @mixin vertical-align {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translate3d(0%, -50%, 0%);
 }
 
 @mixin make-black {
@@ -517,7 +517,6 @@ figure.effect-honey:hover h3 i {
 
 .content
 {
-    padding-top: 20px;
     padding-right: 48px;
 }
 
